@@ -8,7 +8,7 @@ This project uses Time Series Analysis and Time Series Modeling to accurately pr
 We will be focusing on data collected from January 2006 until January 2018. This dataset is consistent of entries when the stock market is open
 
 
-# Business Understanding
+# Business Understanding & Key Questions
 
 # Modeling
 
