@@ -19,6 +19,7 @@ The ever wanting answer to everyone who wants to turn their money into more mone
 The following dataset was grabbed from kaggle and was used to build our model.
 * DJIA_equities/CSCO_2006-01-01_to_2018-01-01.csv
 
+
 When thinking about time series, the first objective of the modeling process is to have a data set that is fully cleaned meaning there aren’t any null/NaN values and that the features that are left in our data frame are only values we plan on fully utilizing for processing. With our dataset, we were fortunately given the following: 
 * opening 
 * closing 
