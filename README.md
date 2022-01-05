@@ -53,7 +53,8 @@ You can see by the graph that our model slowly creeps into a much more closely a
 Results:
 
  The test statistic is: -36.89467794577721
-The critical value when alpha is 5% is: -2.862739030792749
+ 
+ The critical value when alpha is 5% is: -2.862739030792749
  
  The test statistic is: -9.390477430502342
  The critical value when alpha is 5% is: -2.862752613124175
