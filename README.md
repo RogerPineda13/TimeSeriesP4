@@ -30,5 +30,77 @@ To drill down the data a bit further, we decided to focus specifically on one eq
 
 # Modeling
 
+As mentioned above, our modeling process first started with a baseline model that we created quickly to be able to test our model against an extremely simple model. This model, in the time series world, is called the naive model, given that it is something that predicts tomorrow’s value based on the prior day’s result.
+
+To do this, we shifted our data one day forward and compared that against the actual results. From the graph below, you can see that this model funnily enough performs extremely well. This can be attributed to not very large changes in the stock price day over day as well as well as low volatility in the market. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The average RMSE for this model was around $0.41 which while is not that far off in the grand scheme of things, for a stock price it’s incredibly awful. This would result in buying or selling at some indicator 0.41c off which means a losing trade of 0.41c per how many shares bought. The following graph shows the naive model’s average errors layered below the rolling standard deviation over 30 days. This helps show that this model is relatively stationary as it is, however definitely needs some love given the model really struggles in times where there is high volatility or unexpected events. This is extremely evident in 2008 with the financial crisis and days where nobody expected the housing crisis to occur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Knowing that this model wasn’t residual by the two above graphs, we started looking into various different methods of making time series data stationary such as differencing, rolling averages and square rooting the data. We ran Dickey Fuller tests on each different data set after trying some de-trending in the data and found that a rolling average of 1 day gave us the best result where our test statistic was smaller than the critical value, therefor meaning we could reject the null hypothesis.
+
+Before moving on, it’s certainly important we state our null and alternative hypothesizes below.
+	Null: The dataset is not stationary.
+	Alternative: The dataset is stationary.
+
+You can see by the graph that our model slowly creeps into a much more closely aligned or linear model that accounts for trends thru out the CSCO price change over 12 years. The orange, despite being a bit hard to see, does the best job of representing stationary data and ultimately allows us to begin modeling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+We then moved on to an ARIMA model trying to determine what the best p and q values were knowing what our b value (which is used for differencing), would be 1 given the results earlier on.
+
+Interestingly enough, our first model no matter what we changed our values to for p and q created a straight line across the different data points. The RMSE was around $2.71 which is certainly abysmal if we were to take this to the market for actual trading.
+
+One thing that I found extremely interesting is that it didn’t account for any of the prior dips or rises in price, even if we were able to tweak the AR (autoregression) which helps account for prior day moves and MA (moving average) numbers. It seemed that whatever we used, it created a linear answer despite not what we wanted.
+
+One possibility of this problem could have been created by trying to predict roughly 600 days of data, so we tweaked the model to try and predict 50 days of data. To our demise and downfall, the model seemed the exact same. A much different linear line across a valley of data points between two outliers.
+
+
 # Recommendations & Conclusions
 Through exhausted data exploration and model creations we deem that our dataset and the capabilities of time series modeling on its own to not be a good way to accurately predict the future price of stocks. With our best predicting model having a mean square error of (   ) it gives way too much uncertainty on the future price of the stock. Using our model could lead to investors putting in money into the market at the wrong times and have them lose their instant deposits. With this in mind our model hammers down that predicting stock prices is far from an easy task to accomplish and we recommend to not use this model and to look for other model creations to attempt to predict stock prices.
