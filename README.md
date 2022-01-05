@@ -31,3 +31,4 @@ To drill down the data a bit further, we decided to focus specifically on one eq
 # Modeling
 
 # Recommendations & Conclusions
+Through exhausted data exploration and model creations we deem that our dataset and the capabilities of time series modeling on its own to not be a good way to accurately predict the future price of stocks. With our best predicting model having a mean square error of (   ) it gives way too much uncertainty on the future price of the stock. Using our model could lead to investors putting in money into the market at the wrong times and have them lose their instant deposits. With this in mind our model hammers down that predicting stock prices is far from an easy task to accomplish and we recommend to not use this model and to look for other model creations to attempt to predict stock prices.
