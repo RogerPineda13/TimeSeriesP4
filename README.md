@@ -15,7 +15,7 @@ The ever wanting answer to everyone who wants to turn their money into more mone
 * Is it possible to predict future stock prices by just looking at the past?
 * How significant is looking at the closing price for a stock for the day play into the future price?
 * Is it the right time to invest?
-
+# Data Understanding
 # Modeling
 
-# Next Steps & Conclusions
+# Recommendations & Conclusions
