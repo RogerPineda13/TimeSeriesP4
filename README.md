@@ -37,19 +37,6 @@ To do this, we shifted our data one day forward and compared that against the ac
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 The average RMSE for this model was around $0.41 which while is not that far off in the grand scheme of things, for a stock price it’s incredibly awful. This would result in buying or selling at some indicator 0.41c off which means a losing trade of 0.41c per how many shares bought. The following graph shows the naive model’s average errors layered below the rolling standard deviation over 30 days. This helps show that this model is relatively stationary as it is, however definitely needs some love given the model really struggles in times where there is high volatility or unexpected events. This is extremely evident in 2008 with the financial crisis and days where nobody expected the housing crisis to occur.
 
 
@@ -82,15 +69,7 @@ Before moving on, it’s certainly important we state our null and alternative h
 You can see by the graph that our model slowly creeps into a much more closely aligned or linear model that accounts for trends thru out the CSCO price change over 12 years. The orange, despite being a bit hard to see, does the best job of representing stationary data and ultimately allows us to begin modeling.
 
 
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/92397698/148298418-3b80cb6c-bae3-4801-9680-ec84135a66a4.png)
 
 
 We then moved on to an ARIMA model trying to determine what the best p and q values were knowing what our b value (which is used for differencing), would be 1 given the results earlier on.
