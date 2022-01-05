@@ -55,31 +55,6 @@ Results:
  The test statistic is: -36.89467794577721
  
  The critical value when alpha is 5% is: -2.862739030792749
- 
- The test statistic is: -9.390477430502342
- The critical value when alpha is 5% is: -2.862752613124175
- 
- The test statistic is: -8.80875858400221
- The critical value when alpha is 5% is: -2.8627531220854534
- 
- The test statistic is: -9.516393753229009
- The critical value when alpha is 5% is: -2.8627536314741575
- 
- The test statistic is: -8.921889190266416
- The critical value when alpha is 5% is: -2.8627541412908255
- 
- The test statistic is: -8.650810911292682
- The critical value when alpha is 5% is: -2.8627536314741575
- 
- The test statistic is: -9.652858311293087
- The critical value when alpha is 5% is: -2.862755162210213
- 
- The test statistic is: -8.090203283910617
- The critical value when alpha is 5% is: -2.8627541412908255
- 
- The test statistic is: -7.403108006747742
- The critical value when alpha is 5% is: -2.8627561848479437
-
 
 ![image](https://user-images.githubusercontent.com/92397698/148298418-3b80cb6c-bae3-4801-9680-ec84135a66a4.png)
 
