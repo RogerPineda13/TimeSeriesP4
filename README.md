@@ -16,6 +16,8 @@ The ever wanting answer to everyone who wants to turn their money into more mone
 * How significant is looking at the closing price for a stock for the day play into the future price?
 * Is it the right time to invest?
 # Data Understanding
+The following dataset was grabbed from kaggle and was used to build our model.
+* DJIA_equities/CSCO_2006-01-01_to_2018-01-01.csv
 # Modeling
 
 # Recommendations & Conclusions
