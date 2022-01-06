@@ -12,7 +12,7 @@ The ever wanting answer to everyone who wants to turn their money into more mone
 * How significant is looking at the closing price for a stock for the day play into the future price?
 * Is it the right time to invest?
 # Behind Our Data Decisions
-The following dataset was grabbed from kaggle and was used to build our model.
+The following dataset was grabbed from kaggle and was used to build our model. It contains around 3000 rows with information such as date, high, low, open, close, volume & name. The dataset was already clean with no null values or any outliers.
 * DJIA_equities/CSCO_2006-01-01_to_2018-01-01.csv
 
 
@@ -69,4 +69,6 @@ One possibility of this problem could have been created by trying to predict rou
 
 
 # Recommendations & Conclusions
-Through exhausted data exploration and model creations we deem that our dataset and the capabilities of time series modeling on its own to not be a good way to accurately predict the future price of stocks. With our best predicting model having a mean square error of (   ) it gives way too much uncertainty on the future price of the stock. Using our model could lead to investors putting in money into the market at the wrong times and have them lose their instant deposits. With this in mind our model hammers down that predicting stock prices is far from an easy task to accomplish and we recommend to not use this model and to look for other model creations to attempt to predict stock prices.
+Through exhausted data exploration and model creations we deem that our dataset and the capabilities of time series modeling on its own to not be a good way to accurately predict the future price of stocks. With our best predicting model having a mean square error of (   ) it gives way too much uncertainty on the future price of the stock. Using our model could lead to investors putting in money into the market at the wrong times and have them lose their instant deposits. With this in mind our model hammers down that predicting stock prices is far from an easy task to accomplish and we recommend to not use this model and to look for other model creations to attempt to predict stock prices. For future analysis we would want to optimize more and test more data against additional weeks. We could also look into other Neural Network models such as Long Short Term Memory Recurrent Neural Network (LSTM).
+
+
