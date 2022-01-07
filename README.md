@@ -74,3 +74,4 @@ Through exhausted data exploration and model creations we deem that our dataset 
 # External Links
 [Presentation](https://docs.google.com/presentation/d/1wXTgnIg2QwhYDieBWDIVPHNKBEn_snRSnzts5Syo9Ss/edit#slide=id.gd251bb473_0_600)
 
+[Data Source](https://www.kaggle.com/szrlee/stock-time-series-20050101-to-20171231)
