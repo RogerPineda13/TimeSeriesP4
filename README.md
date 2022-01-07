@@ -83,4 +83,5 @@ Through exhausted data exploration and model creations we deem that our dataset 
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── WallstreetCollects_FINAL.ipynb      <- Narrative documentation of analysis in Jupyter notebook
 ├── WSC_powerpoint.pdf                  <- PDF version of project presentation
+├── DJIA_equities                       <- Both sourced externally and generated from code
 └── Images                              <- Both sourced externally and generated from code
