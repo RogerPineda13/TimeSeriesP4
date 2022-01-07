@@ -35,12 +35,12 @@ As mentioned above, our modeling process first started with a baseline model tha
 To do this, we shifted our data one day forward and compared that against the actual results. From the graph below, you can see that this model funnily enough performs extremely well. This can be attributed to not very large changes in the stock price day over day as well as well as low volatility in the market. 
 
 
-![image](https://user-images.githubusercontent.com/92397698/148300113-a140de10-8d9d-40fe-a103-a91c474d897b.png)
+![chart1](./Images/origshift.jpg)
 
 
 The average RMSE for this model was around $0.41 which while is not that far off in the grand scheme of things, for a stock price it’s incredibly awful. This would result in buying or selling at some indicator 0.41c off which means a losing trade of 0.41c per how many shares bought. The following graph shows the naive model’s average errors layered below the rolling standard deviation over 30 days. This helps show that this model is relatively stationary as it is, however definitely needs some love given the model really struggles in times where there is high volatility or unexpected events. This is extremely evident in 2008 with the financial crisis and days where nobody expected the housing crisis to occur.
 
-![image](https://user-images.githubusercontent.com/92397698/148300331-5cc1cf90-2414-4b16-8f64-f84c25a88c9b.png)
+![chart2](./Images/avgrmse.jpg)
 
 Knowing that this model wasn’t residual by the two above graphs, we started looking into various different methods of making time series data stationary such as differencing, rolling averages and square rooting the data. We ran Dickey Fuller tests on each different data set after trying some de-trending in the data and found that a rolling average of 1 day gave us the best result where our test statistic was smaller than the critical value, therefor meaning we could reject the null hypothesis.
 
@@ -56,7 +56,7 @@ Results:
  
  The critical value when alpha is 5% is: -2.862739030792749
 
-![image](https://user-images.githubusercontent.com/92397698/148298418-3b80cb6c-bae3-4801-9680-ec84135a66a4.png)
+![chart3](./Images/lastmod.jpg)
 
 
 We then moved on to an ARIMA model trying to determine what the best p and q values were knowing what our b value (which is used for differencing), would be 1 given the results earlier on.
