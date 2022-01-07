@@ -75,3 +75,12 @@ Through exhausted data exploration and model creations we deem that our dataset 
 [Presentation](https://docs.google.com/presentation/d/1wXTgnIg2QwhYDieBWDIVPHNKBEn_snRSnzts5Syo9Ss/edit#slide=id.gd251bb473_0_600)
 
 [Data Source](https://www.kaggle.com/szrlee/stock-time-series-20050101-to-20171231)
+
+[Jupyter Notebook](./Final_NoteBook.ipynb)
+
+## Repository Structure
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── Final_NoteBook.ipynb                <- Narrative documentation of analysis in Jupyter notebook
+├── Your big idea.pdf.pdf               <- PDF version of project presentation
+└── Images                              <- Both sourced externally and generated from code
