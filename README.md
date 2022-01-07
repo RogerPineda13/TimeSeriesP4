@@ -40,7 +40,7 @@ To do this, we shifted our data one day forward and compared that against the ac
 
 The average RMSE for this model was around $0.41 which while is not that far off in the grand scheme of things, for a stock price it’s incredibly awful. This would result in buying or selling at some indicator 0.41c off which means a losing trade of 0.41c per how many shares bought. The following graph shows the naive model’s average errors layered below the rolling standard deviation over 30 days. This helps show that this model is relatively stationary as it is, however definitely needs some love given the model really struggles in times where there is high volatility or unexpected events. This is extremely evident in 2008 with the financial crisis and days where nobody expected the housing crisis to occur.
 
-![chart2](./Images/avgrmse.jpg)
+![chart2](./Images/avgrmse2.jpg)
 
 Knowing that this model wasn’t residual by the two above graphs, we started looking into various different methods of making time series data stationary such as differencing, rolling averages and square rooting the data. We ran Dickey Fuller tests on each different data set after trying some de-trending in the data and found that a rolling average of 1 day gave us the best result where our test statistic was smaller than the critical value, therefor meaning we could reject the null hypothesis.
 
