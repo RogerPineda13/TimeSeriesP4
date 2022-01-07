@@ -76,11 +76,11 @@ Through exhausted data exploration and model creations we deem that our dataset 
 
 [Data Source](https://www.kaggle.com/szrlee/stock-time-series-20050101-to-20171231)
 
-[Jupyter Notebook](./Final_NoteBook.ipynb)
+[Jupyter Notebook](./WallstreetCollects_FINAL.ipynb)
 
 ## Repository Structure
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── Final_NoteBook.ipynb                <- Narrative documentation of analysis in Jupyter notebook
-├── Your big idea.pdf.pdf               <- PDF version of project presentation
+├── WallstreetCollects_FINAL.ipynb      <- Narrative documentation of analysis in Jupyter notebook
+├── WSC_powerpoint.pdf                  <- PDF version of project presentation
 └── Images                              <- Both sourced externally and generated from code
